@@ -1,4 +1,5 @@
 const class1 =
+  //1반 시간표 테이블 코드드
   "<tr>\n" +
   "            <th class=\"bs\"><div>요일</div>교시</th>" +
   "            <th>월</th>\n" +
@@ -62,6 +63,7 @@ const class1 =
   "          </tr>";
 
 const class2 =
+  //2반 시간표 테이블 코드드
   "<tr>\n" +
   "            <th class=\"bs\"><div>요일</div>교시</th>" +
   "            <th>월</th>\n" +
@@ -124,6 +126,7 @@ const class2 =
   "          </tr>";
 
 const class3 =
+  //3반 시간표 테이블 코드드
   "<tr>\n" +
   "            <th class=\"bs\"><div>요일</div>교시</th>" +
   "            <th>월</th>\n" +
@@ -188,6 +191,7 @@ const class3 =
   "          </tr>";
 
 const class4 =
+  //4반 시간표 테이블 코드드
   "<tr>\n" +
   "            <th class=\"bs\"><div>요일</div>교시</th>" +
   "            <th>월</th>\n" +
@@ -250,20 +254,26 @@ const class4 =
   "            <td><b>창체</b><br />전호</td>\n" +
   "          </tr>";
 
+//html에 있는 selector를 js 변수로 연결
 const selector = document.getElementById("selector");
 
+//cookie 변수 생성, 
 let cookie = document.cookie;
+//cookie 값이 없다면 cookie 값을 "1 - 1"로 설정
 if(cookie === "") cookie="1 - 1";
+//selector의 벨류 값을 쿠키에 저장
 selector.value = cookie;
 
-
+//selector가 바뀌면 리로드
 selector.addEventListener("change", reload);
 
 reload();
 
+//함수선언식 리로드 ->
 function reload() {
   document.cookie=selector.value;
 
+  //selector의 벨류 값이 각각 1 - 1, 1 - 2, 1 - 3, 1 - 4일때 table값을 class1~4로 변경
   switch (selector.value) {
     case "1 - 1":
       document.getElementById("table").innerHTML = class1;
