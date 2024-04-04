@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "GmarketSansMedium";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    font-family: "GmarketSansMedium", cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-20deg, #86daff, #bdf6ff);
+    /*background-color: #aaf2ff;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#table{
+
+    background-color: white;
+    box-shadow: 15px 15px 5px rgb(108, 190, 255);
+    width: 70vh;
+    height: 70vh;
+    position: relative;
+    text-align: center;
+
+    border-style: outset;
+    border-width: 3px;
+    border-radius: 7px;
+    border-color: rgb(0, 58, 105);
+
+    color: rgb(0, 58, 105);
+}
+
+.color{
+    color: rgb(0, 58, 105);
+}
+
+#selector{
+    font-size: 20px;
+    color: rgb(0, 58, 105);
+    text-align: center;
+    height: 50px;
+    width: 100px;
+    border-style: outset;
+    box-shadow: 5px 5px 3px rgb(108, 190, 255);
+    border-color: rgb(0, 58, 105);
+    border-width: 3.5px;
+    border-radius: 7px;
+}
+
+.bs {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="0" x2="100%" y2="100%" stroke="rgb(0, 58, 105)" /></svg>');
+    text-align: left;
+    padding: 5px 5px;
+}
+.bs>div{
+    text-align: right;
+}
+
+
+.bsla {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="100%" x2="100%" y2="0" stroke="rgb(0, 58, 105)" /><line x1="0" y1="0" x2="100%" y2="100%" stroke="rgb(0, 58, 105)" /></svg>');
+    text-align: right;
+    padding: 5px 5px;
+}
+
+h1{
+    font-size: 40px;
+    border-style: outset;
+    border-width: 3.5px;
+    border-color: rgb(0, 58, 105);
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: 6px 6px 4px rgb(108, 190, 255);
+}
